@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наша команда | Kaboom-Project</title>
+  <style>
+    /* Основные стили */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #000;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ff0000, #ff6f61);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .member {
+      background: rgba(255, 0, 0, 0.1);
+      border: 2px solid #ff0000;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid #ff0000;
+    }
+    .member h3 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #ff6f61;
+    }
+    .member p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 12px 24px;
+      background: #ff0000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    .btn:hover {
+      background: #ff3b2f;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    /* Анимации */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px rgba(255, 0, 0, 0.5); }
+      100% { text-shadow: 0 0 20px rgba(255, 0, 0, 0.9); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Наша команда</h1>
+  <div class="team">
+    <!-- Участник 1 -->
+    <div class="member">
+      <img src="avatar_kaboom.jpg" alt="Kaboom">
+      <h3>Kaboom (Виктор Сникерс)</h3>
+      <p>Основатель проекта. Отвечал за общее руководство и стратегию развития.</p>
+    </div>
+    <!-- Участник 2 -->
+    <div class="member">
+      <img src="avatar_twelve.jpg" alt="12_Twelve_12">
+      <h3>12_Twelve_12</h3>
+      <p>Модератор Discord. Поддерживал порядок в сообществе и помогал игрокам.</p>
+    </div>
+    <!-- Участник 3 -->
+    <div class="member">
+      <img src="avatar_regan.jpg" alt="Regan">
+      <h3>Regan (Owel)</h3>
+      <p>Техник сервера. Отвечал за настройку и поддержку серверов.</p>
+    </div>
+    <!-- Участник 4 -->
+    <div class="member">
+      <img src="avatar_steamtime.jpg" alt="SteamTime">
+      <h3>SteamTime</h3>
+      <p>Техник ботов. Разрабатывал и поддерживал ботов для Discord.</p>
+    </div>
+    <!-- Участник 5 -->
+    <div class="member">
+      <img src="avatar_bobr.jpg" alt="Бобр">
+      <h3>Бобр</h3>
+      <p>Модератор Discord. Помогал в управлении сообществом и решении конфликтов.</p>
+    </div>
+    <!-- Участник 6 -->
+    <div class="member">
+      <img src="avatar_lisiy_gnom.jpg" alt="Lisiy Gnom">
+      <h3>Lisiy Gnom</h3>
+      <p>Модератор NoRules. Отвечал за порядок на сервере NoRules.</p>
+    </div>
+    <!-- Участник 7 -->
+    <div class="member">
+      <img src="avatar_ilya228.jpg" alt="Илья228">
+      <h3>Илья228</h3>
+      <p>Стажёр. Учился и помогал в различных задачах проекта.</p>
+    </div>
+    <!-- Участник 8 -->
+    <div class="member">
+      <img src="avatar_stupidowl.jpg" alt="StupidOwl">
+      <h3>StupidOwl</h3>
+      <p>Стажёр. Активно участвовал в тестировании и улучшении проекта.</p>
+    </div>
+    <!-- Контент команда -->
+    <div class="member">
+      <img src="avatar_purexa.jpg" alt="purexa.official">
+      <h3>purexa.official (Римский)</h3>
+      <p>Контент-мейкер. Снимал и монтировал ролики о сервере.</p>
+    </div>
+    <div class="member">
+      <img src="avatar_alpha.jpg" alt="Alpha-Hills">
+      <h3>Alpha-Hills</h3>
+      <p>Контент-мейкер. Помогал в создании и продвижении видеороликов.</p>
+    </div>
+    <div class="member">
+      <img src="avatar_swiss.jpg" alt="swisscores">
+      <h3>swisscores</h3>
+      <p>Контент-мейкер. Отвечал за съёмку и монтаж видео о проекте.</p>
+    </div>
+    <div class="member">
+      <img src="avatar_vanireza.jpg" alt="vanireza">
+      <h3>vanireza</h3>
+      <p>Контент-мейкер. Участвовал в создании контента для YouTube.</p>
+    </div>
+  </div>
+  <a href="index.html" class="btn">На главную</a>
+</body>
+</html>

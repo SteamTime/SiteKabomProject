@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaboom-Project | Завершение</title>
+  <style>
+    /* Основные стили */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ff0000, #ff6f61);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 2s ease-in-out, glow 2s infinite alternate;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 12px 24px;
+      background: #ff0000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    .btn:hover {
+      background: #ff3b2f;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    /* Анимации */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px rgba(255, 0, 0, 0.5); }
+      100% { text-shadow: 0 0 20px rgba(255, 0, 0, 0.9); }
+    }
+    /* Фоновые эффекты */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+      z-index: -1;
+      animation: pulse 5s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.5; }
+      100% { transform: scale(1.2); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Спасибо за всё!</h1>
+    <p>Проект Kaboom-Project завершает свою работу. Мы благодарим всех, кто был с нами.</p>
+    <a href="gallery.html" class="btn">Галерея</a>
+    <a href="history.html" class="btn">История</a>
+    <a href="contacts.html" class="btn">Контакты</a>
+  </div>
+</body>
+</html>
